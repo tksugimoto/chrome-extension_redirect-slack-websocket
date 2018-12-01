@@ -1,0 +1,16 @@
+{
+	"name": "Redirect Slack WebSocket",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"author": "tksugimoto",
+
+	"content_scripts": [{
+		"run_at": "document_start",
+		"matches": [
+			"https://*.slack.com/*"
+		],
+		"js": [
+			"js/redirect-slack-websocket.js"
+		]
+	}]
+}
