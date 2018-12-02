@@ -15,7 +15,7 @@
 				const url = new URL(args[0]);
 				if (url.hostname === 'wss-primary.slack.com') {
 					url.hostname = 'everything.lb.slack-msgs.com';
-					args[0] = url.toString();
+					args[0] = url.href;
 				}
 				super(...args);
 			}
